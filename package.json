@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/YangYan-WH/netease-cloud-music#readme",
   "dependencies": {
-    "leancloud-storage": "^3.10.0"
+    "leancloud-storage": "^3.10.0",
+    "qiniu-js": "^1.0.22",
+    "plupload": "^2.3.6"
   }
 }
