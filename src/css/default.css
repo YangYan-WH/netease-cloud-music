@@ -114,10 +114,15 @@ body{
 .form input[type=button],
 .form input[type=submit],
 .form button{
-    height: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
+    /* height: 30px; */
+    padding: 10px 20px;
+    /* padding-left: 10px; */
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #2486ff;
+    color: #fff;
+    cursor: pointer;
 }
 .page > main{
     padding-top: 20px;
