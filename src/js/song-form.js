@@ -82,6 +82,10 @@
                 this.model.data = data
                 this.view.render(this.model.data)
             })
+            window.eventHub.on('select',(data)=>{
+                this.model.data = data
+                this.view.render(this.model.data)
+            })
         },
         bindEvents(){
             this.view.$el.on('submit','form',(e)=>{
@@ -95,6 +99,7 @@
                     .then(()=>{
                         // console.log(this.model.data)
                         this.view.reset()
+                        //深拷贝
                         let string = JSON.stringify(this.model.data)
                         let object = JSON.parse(string)
                         window.eventHub.emit('create', object)
