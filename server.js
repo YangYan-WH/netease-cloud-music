@@ -20,7 +20,7 @@ var server = http.createServer(function(request, response){
 
   /******** 从这里开始看，上面不要看 ************/
 
-  console.log('方方说：含查询字符串的路径\n' + pathWithQuery)
+  console.log('含查询字符串的路径\n' + pathWithQuery)
 
   if(path==='/uptoken'){
     response.statusCode = 200
@@ -55,4 +55,4 @@ var server = http.createServer(function(request, response){
 })
 
 server.listen(port)
-console.log('监听 ' + port + ' 成功\n请用在空中转体720度然后用电饭煲打开 http://localhost:' + port)
+console.log('监听 ' + port + ' 成功\n http://localhost:' + port)
