@@ -93,7 +93,7 @@
                 })
                 this.model.create(data)
                     .then(()=>{
-                        console.log(this.model.data)
+                        // console.log(this.model.data)
                         this.view.reset()
                         let string = JSON.stringify(this.model.data)
                         let object = JSON.parse(string)
